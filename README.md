@@ -1,91 +1,97 @@
-Here’s a detailed and engaging `README.md` for your **Advanced To-Do App**, now with appropriate emojis to enhance clarity and appeal:
+Thanks for the clarification! Since your project is a **CLI-based Advanced To-Do App** with a Python backend (and you may plan a frontend later), here’s a `README.md` tailored for a **command-line tool**, still with emojis and a clean format:
 
 ---
 
-# ✅ Advanced To-Do App 🧠🗂️
+# ✅ Advanced CLI To-Do App 🧠📋
 
-A sleek and powerful full-stack To-Do List Manager built with a **Python backend** and a **React + Tailwind CSS frontend**. Ideal for managing tasks with authentication, due dates, and filters — all in a beautiful UI.
+A feature-rich **command-line To-Do application** built with Python! Organize your tasks, manage due dates, authenticate users, and stay productive — all from your terminal.
 
 ---
 
-## 🚀 Tech Stack
+## 🛠️ Built With
 
-| Layer       | Technology                         |
-|-------------|-------------------------------------|
-| 🖥️ Frontend | React, Tailwind CSS, Axios          |
-| 🛠️ Backend  | Python (FastAPI / Flask), SQLite / PostgreSQL |
-| 🔐 Auth      | JWT-based Authentication            |
-| ☁️ Deploy    | Optional: Docker, Vercel, Render    |
+- 🐍 Python 3.x
+- 🗃️ SQLite (or JSON for simple storage)
+- 🔐 JWT (for optional authentication)
+- 📦 Rich (for pretty CLI UI — optional)
 
 ---
 
 ## ✨ Features
 
-- 🔐 **User Authentication** (Register / Login using JWT)
-- 📝 **Create, Edit, and Delete Tasks**
-- ⏰ **Set & Update Due Dates**
-- ✅ **Mark Tasks as Completed**
-- 🔍 **Filter Tasks by Status (All / Completed / Pending)**
-- 📱 **Responsive UI with Tailwind CSS**
+- 👤 User registration & login
+- 📝 Add, edit, delete tasks
+- ⏰ Set and modify due dates
+- ✅ Mark tasks as complete
+- 🔍 Filter tasks (all / completed / pending)
+- 📊 View tasks sorted by date or status
+- 💾 Save data locally (file or SQLite)
 
 ---
 
-## 📁 Folder Structure
+## 🖥️ Usage
+
+### 🚀 Run the App
+
+```bash
+python todo.py
+```
+
+### 🧩 Example Commands (Interactive CLI)
+
+```bash
+> login
+> register
+> add "Submit assignment" --due "2025-05-02"
+> list --status "pending"
+> complete 3
+> delete 4
+> logout
+```
+
+---
+
+## 📁 Project Structure
 
 ```
-advanced-todo-app/
-├── backend/                  # Python API (FastAPI / Flask)
-│   ├── models/              # DB models
-│   ├── routes/              # API routes
-│   ├── auth/                # JWT logic
-│   └── main.py              # App entry point
-├── frontend/                # React + Tailwind CSS
-│   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── pages/           # Auth / Dashboard pages
-│   │   ├── services/        # Axios API services
-│   │   └── App.jsx          # Main app component
+cli-todo-app/
+├── todo.py                 # Main CLI script
+├── auth.py                 # Handles login/register/JWT
+├── tasks.py                # Add/edit/delete task functions
+├── database.py             # SQLite or file-based DB logic
+├── utils.py                # Helper functions
 └── README.md
 ```
 
 ---
 
-## 🛠️ Getting Started
+## ⚙️ Installation
 
-### 1. Backend Setup
+1. Clone the repo:
 
 ```bash
-cd backend
+git clone https://github.com/Aniketgawande1/cli-todo-app.git
+cd cli-todo-app
+```
+
+2. Install dependencies (if any):
+
+```bash
 pip install -r requirements.txt
-python main.py
 ```
 
-### 2. Frontend Setup
+3. Run:
 
 ```bash
-cd frontend
-npm install
-npm run dev
+python todo.py
 ```
 
 ---
 
-## 📸 Screenshots (Optional)
+## 🛡️ License
 
-> Include a few UI screenshots here to show off the dashboard, task list, and modals.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
+MIT License © 2025 [Aniket Gawande](https://github.com/Aniketgawande1)
 
 ---
 
-## 📄 License
-
-MIT License © 2025 Aniket Gawande
-
----
-
-Would you like me to create a version that includes clickable badges (like GitHub stars, license, or Netlify deployment status)?
+Would you like me to generate this as a file for you or include support for a future React frontend too?
