@@ -1,6 +1,4 @@
-Thanks for the clarification! Since your project is a **CLI-based Advanced To-Do App** with a Python backend (and you may plan a frontend later), here’s a `README.md` tailored for a **command-line tool**, still with emojis and a clean format:
 
----
 
 # ✅ Advanced CLI To-Do App 🧠📋
 
